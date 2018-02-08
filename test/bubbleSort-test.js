@@ -24,7 +24,7 @@ describe ('bubbleSort', function () {
   });
   
   it('should sort a large array of numbers', function () {
-    let randomArray = createRandomArray(-15000, 15000);
+    let randomArray = createRandomArray(-1000, 1000);
     bubbleSort(randomArray);
     for (let i = 1; i < randomArray.length; i++) {
     assert.equal(randomArray[i - 1] <= randomArray[i], true);
